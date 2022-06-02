@@ -1,0 +1,516 @@
+@font-face {
+    font-family: "sansation";
+    src: url(./font/Sansation_Regular.ttf);
+}
+
+@font-face {
+    font-family: "robold";
+    src: url(./font/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url(./font/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: "robolight";
+    src: url(./font/Roboto-Light.ttf);
+}
+
+body {
+    background-color: #418255;
+}
+
+#centre {
+    width: 1440px;
+    height: 4086px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+#fond {
+    background-image: url("./images/coverBackground.JPG");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 640px;
+    margin: 0 auto;
+}
+
+header {
+    width: 1440px;
+    height: 100px;
+    background-color: #418255;
+    opacity: calc(90%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+}
+
+#present {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: 50px;
+}
+
+.iconeSociety {
+    display: block;
+    margin: 20px
+}
+
+.societyName {
+    font-family: "robold";
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+}
+
+header nav {
+    position: relative;
+    right: 50px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    list-style-type: none;
+}
+
+li {
+    font-family: "robold";
+    font-size: 24px;
+    padding: 14px;
+}
+
+header nav:hover li {
+    filter: blur(1px);
+    opacity: .5;
+    transform: scale(.98);
+    box-shadow: none;
+}
+
+header nav:hover li:hover {
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
+    box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
+}
+
+#container {
+    width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#itemUn {
+    width: 1440px;
+    background-color: #70A37F;
+    margin-bottom: 40px;
+}
+
+#itemUn h2 {
+    color: #ffffff;
+    font-family: "roboto";
+    font-size: 24px;
+}
+
+#itemUn p {
+    color: #ffffff;
+    padding-right: 50px;
+    padding-left: 50px;
+    font-family: "robolight";
+    font-size: 20px;
+}
+
+#itemDeux {
+    display: flex;
+    margin-bottom: 40px;
+    height: 700px;
+
+}
+
+#itemDeux button {
+    height: 10%;
+    border: none;
+    outline: none;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    padding: 1em;
+    display: flex;
+}
+
+#itemDeux button .arrow {
+    border: solid #fff;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 10px;
+    transition: transform 0.3s ease-out;
+    outline: none;
+}
+
+#right-btn {
+    margin: auto 0 auto -2em;
+}
+
+#right-btn .arrow {
+    transform: rotate(-45deg);
+}
+
+#left-btn {
+    z-index: 0;
+    margin: auto -2em auto 0;
+}
+
+#left-btn .arrow {
+    transform: rotate(135deg);
+}
+
+#carousel {
+    width: 935px;
+    height: 616px;
+}
+
+#itemTrois {
+    width: 1440px;
+    background-color: #70A37F;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "robolight";
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.pure-table{
+    position: relative;
+    left: 30px ;
+}
+
+.listeProduit {
+    display: flex;
+}
+
+table {
+    table-layout: fixed;
+    width: 80%;
+}
+
+
+th,
+td {
+    padding: 20px;
+}
+
+.price{
+    position: relative;
+    left: 75px;
+}
+
+.indic {
+    padding: 63px;
+}
+
+#itemQuatre {
+    margin-top: 50px;
+    display: flex;
+}
+
+.coordonnees {
+    width: 256px;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: "robolight";
+    font-size: 20px;
+}
+
+.map {
+    margin-right: 25px;
+}
+
+#itemQuatre i {
+    font-size: 22px;
+}
+
+#itemCinq {
+    margin-top: 50px;
+    background-color: #70A37F;
+    width: 1440px;
+    height: 500px;
+    display: flex;
+}
+
+.info1 {
+    width: 437px;
+    height: 161px;
+    color: #ffffff;
+    font-family: "robolight";
+}
+
+.info2 {
+    width: 430px;
+    height: 147px;
+}
+
+.info2 input {
+    margin: 20px;
+}
+
+.info3 {
+    width: 795px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+#allFlex {
+    display: flex;
+}
+
+.info3 textarea {
+    resize: none;
+    width: 750px;
+    height: 335px;
+}
+
+footer {
+    background-color: #70A37F;
+    width: 1440px;
+    height: 200px;
+}
+
+footer img {
+    width: 1440px;
+}
+
+footer nav ul li {
+    list-style-type: none;
+    color: #ffffff;
+}
+
+footer nav ul {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+}
+
+footer nav:hover li {
+    filter: blur(1px);
+    opacity: .5;
+    transform: scale(.98);
+    box-shadow: none;
+}
+
+footer nav:hover li:hover {
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
+    box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.125);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+
+    #body,
+    #centre,
+    #fond,
+    header,
+    #container,
+    footer {
+        width: 1024px;
+    }
+
+    nav ul li {
+        font-size: 22px;
+    }
+
+    #centre {
+        height: 3780px;
+    }
+
+    #fond {
+        height: 420px;
+    }
+
+    #itemDeux {
+        height: 530px;
+    }
+
+    #carousel {
+        width: 735px;
+        height: 416px;
+    }
+
+    #itemTrois {
+        height: 1287px;
+    }
+
+    .produits {
+        padding-right: 63px;
+        padding-left: 63px;
+    }
+
+    #itemCinq {
+        height: 800px;
+    }
+
+    #allFlex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info3 {
+        margin-right: 50px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 423px;
+    }
+
+    .info3 textarea {
+        resize: none;
+        width: 400px;
+        height: 250px;
+    }
+
+    footer {
+        height: 165px;
+    }
+
+    footer img {
+        width: 1024px;
+    }
+}
+
+@media screen and (min-width: 250px) and (max-width: 767px) {
+
+    #body,
+    #centre,
+    #fond,
+    header,
+    #container,
+    footer {
+        width: 766px;
+    }
+
+    .societyName {
+        font-size: 20px;
+    }
+
+    header nav ul {
+        display: flex;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: flex;
+        align-items: center;
+        font-size: 18px;
+    }
+
+    #centre {
+        height: 3780px;
+    }
+
+    #fond {
+        height: 400px;
+    }
+
+    #itemUn h2 {
+        font-size: 20px;
+    }
+
+    #itemUn p {
+        font-size: 18px;
+    }
+
+    #itemDeux {
+        height: 475px;
+    }
+
+    #carousel {
+        width: 600px;
+        height: 316px;
+    }
+
+    #itemTrois {
+        height: 1404px;
+    }
+
+    #itemTrois h3 {
+        font-size: 20px;
+    }
+
+    #itemTrois p {
+        font-size: 18px;
+    }
+
+    .produits {
+        padding-right: 63px;
+        padding-left: 63px;
+    }
+
+    #itemQuatre p {
+        font-size: 18px;
+    }
+
+    #itemCinq {
+        height: 800px;
+        width: 766px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #allFlex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info3 {
+        height: 390px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .info3 textarea {
+        resize: none;
+        width: 555px;
+        height: 285px;
+    }
+
+    footer {
+        height: 165px;
+    }
+
+    footer nav ul {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    footer img {
+        width: 766px;
+    }
+
+}
